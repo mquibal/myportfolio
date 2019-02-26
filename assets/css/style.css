@@ -1,0 +1,503 @@
+/*look references below*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html { 
+	scroll-behavior: smooth;
+}
+
+
+a {
+	color: white;
+}
+
+.text-center {
+    text-align: center!important;
+    font-size: 25px;
+    font-weight: 600;
+    color: #17a2b8;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+.fa-inverse {
+    color: black;
+}
+.fa-stack-1x {
+    line-height: inherit;
+}
+.fa-stack-1x, .fa-stack-2x {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+
+.navbar-brand {
+    color: white;
+    padding: 0 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    font-size: 13px;
+}
+
+.nav-menu {
+    background: transparent;
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+
+    transition: all .4s;
+}
+
+@media (max-width:34em) {
+    .nav-menu {
+        background: #000 !important;
+    }
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.menu-item {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+}
+
+@media (max-width: 34em) {
+    .menu-item {
+        padding: 10px 10px 10px;
+    }
+}
+
+.navbar-toggler {
+    cursor: pointer;
+    outline: 0;
+}
+
+.ham {
+    transition: width 0.3s;
+    background: #F9F8F7;
+}
+
+.line1, .line3  {
+    width: 28px;
+    height: 2px;
+    margin: 6px;    
+    transition:  0.4s;
+    
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-3px, 2px);
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-3px, -2px);
+}
+
+.menu-item:hover {
+    color: #13a6bd;
+}
+
+.nav-active {
+    color: #13a6bd;
+}
+
+.dropdown-item {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.costum-navbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #000 !important;  
+    position: fixed;
+}
+
+/* ===== END OF NAVBAR SECTION ===== */
+
+
+
+/* ===== HERO SECTION ===== */
+
+
+.hero-section {
+    background: linear-gradient(
+        rgba(0, 0, 0, .7), 
+        rgba(0, 0, 0, .6)),   
+        url('../images/bg.jpg');
+        
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-hero {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.sub-text-hero {
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 9px;
+    color: #17a2b8;
+}
+
+.nav-bottom {
+    background: transparent !important;
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    
+    bottom: 10px;
+}
+
+.item-bottom {
+    padding: 0 20px;
+    transition: .2s;
+    font-size: 20px;
+}
+
+.item-bottom:hover {
+    background: transparent;
+    transform: translateY(-2px);
+}
+
+/* ===== END OF HERO SECTION ===== */
+
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/bg.jpg");
+
+  /* Set a specific height */
+  min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.card {
+    /* Minimum width of 24rem and grow to fit available space */
+    flex: 1 0 20rem;
+    /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+/*.card:hover {
+    transform: scale(1.15);
+    transition: transform 400ms ease-out;
+}*/
+
+
+a.main{
+	margin: 3px;
+	color: white;
+	padding: 10px;
+	border: 2px solid white;
+	font-size: 20px;
+}
+
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+
+strong.myname {
+	color: #8647A3;
+	font-size: 40px;
+}
+
+
+
+#me{
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 50%;
+
+}
+
+
+
+p.headline {
+	padding-top: 4em;
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 40px;
+}
+
+/*li.nav-item a:hover {
+  background-color: gray;
+  
+}*/
+
+strong.name{
+	font-family: 'Limelight', cursive;
+	border: 2px solid #fff;
+	padding: 7px;
+	font-size: 20px;
+}
+
+a.navbar-brand {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+}
+
+/*div#gif{
+	height: 100vh;
+	width: 100%;
+	object-fit: cover;
+	
+}*/
+
+div.container-footer{
+
+	font-family: 'Ubuntu', sans-serif;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 2px;
+}
+
+input.form-control{
+	margin-top: 3px;
+	margin-bottom: 3px;
+	background-color: #0f0f0f;
+	border: 0;
+}
+
+textarea.form-control{
+	background-color: #0f0f0f;
+	border: 0;
+	margin-bottom: 30px;
+}
+
+#landing-button{
+	border-color: white !important;
+	color: white;
+	margin: 0 auto;
+
+}
+
+#submit-btn{
+	border-color: white !important;
+	color: white;
+	margin: 0 auto;
+}
+
+
+.default {
+    border-color: #fff;
+    color: white;
+}
+
+.default:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+div.row-1{
+	
+	height: 100px;
+	height: 100vh;
+	background-color: #161616;
+	}
+
+div.row-2{
+	padding-top: 100px;
+	height: 100vh;
+	background-color: white;
+}
+div.row-3{
+	padding-top: 100px;
+	height: 100vh;
+	background-color: #EFEFEF;
+}
+
+div.row-4{
+	padding-top: 100px;
+	height: 100vh;
+	background-color: #161616;
+}
+
+p.contact{
+	color: #47E5DD;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.waypoint-bar{
+	background-color: white;
+	width: 100px;
+	height: 5px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin: 0 auto;
+}
+
+/* ===== SKILLS ===== */
+
+li { list-style: none; }
+
+#skillsHolder {
+  float: left;
+  min-width: 925px;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+#skillCenter {
+  width: 600px;
+  margin: 0 auto;
+}
+
+#skillCenter h2 {
+  text-align: center;
+  color: grey;
+/*  margin: 60px 0 4px 15px;*/
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.6rem;
+}
+ 
+.skills {
+  background: #4D93BF;
+  width: 300px;
+  margin: 15px 0px;
+  padding: 8px 0px 8px 6px;
+  font-family: arial;
+  font-size: .9em;
+}
+ 
+.skills p { 
+  margin: 0px 10px;
+  color: #F2F2F2; 
+}
+
+
+video::-webkit-media-controls {
+	display: none!important;
+}
+
+
+/* ===== END SKILLS ===== */
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px){
+
+	/*img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	}*/
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 400px) {
+
+
+
+
+
+}
+
+
+
+/* Fixed/sticky icon bar for social media (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 15px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: gray;
+  color: white;
+}
+
+
+/*font families:
+
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Syncopate', sans-serif;
+font-family: 'Limelight', cursive;
+font-family: 'Khula', sans-serif;*/
+
+
+
+
+
+/*tablet*/
+
+@media only screen and (min-width: 401px) and (max-width: 960px){
+
+}
+
+/*mobile*/
+@media only screen and (max-width: 400px){
+
+}
