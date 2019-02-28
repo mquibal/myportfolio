@@ -20,16 +20,17 @@ $(document).ready(function() {
     
 });
 
-$(".htmlCSS").animate({width:"95%"},2100);
-$(".jsjqaj").animate({width:"74%"},2100);
-$(".rwd").animate({width:"86%"},2100);
+$(".htmlCSS").animate({width:"90%"},2100);
+$(".bootstrap").animate({width:"70%"},2100);
+$(".jsjqaj").animate({width:"50%"},2100);
+$(".rwd").animate({width:"80%"},2100);
 $(".seo").animate({width:"65%"},2100);
 $(".cssF").animate({width:"44%"},2100);
 $(".wpVC").animate({width:"60%"},2100);
-$(".bdt").animate({width:"85%"},2100);
+$(".bdt").animate({width:"65%"},2100);
 $(".bAT").animate({width:"38%"},2100);
 $(".phpMSQL").animate({width:"40%"},2100)
-$(".typo").animate({width:"95%"},2100);
+$(".typo").animate({width:"70%"},2100);
 $(".acs").animate({width:"65%"},2100);
 $(".ld").animate({width:"80%"},2100);
 
@@ -44,3 +45,9 @@ function hideVideo(e){
 	$('video', this).get(0).pause();
 }
 
+
+$(".hover").mouseleave(
+  function() {
+    $(this).removeClass("hover");
+  }
+);
